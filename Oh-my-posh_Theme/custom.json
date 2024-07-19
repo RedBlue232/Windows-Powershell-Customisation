@@ -3,11 +3,11 @@
   "blocks": [
     {
       "alignment": "left",
-      "newline": false,  // Ensure no newline for prompt alignment
+      "newline": false, 
       "segments": [
         {
-          "background": "#f5e0dc",  // Rosewater
-          "foreground": "#89b4fa",  // Blue
+          "background": "#f5e0dc",  
+          "foreground": "#89b4fa",  
           "leading_diamond": "\ue0c5",
           "properties": {
             "arch": "\uf303",
@@ -30,7 +30,7 @@
           "foreground": "#89b4fa",  // Blue
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": " <#89b4fa>{{ .UserName }}</><#f38ba8>@{{ .HostName }}</> ", // Added space before username
+          "template": " <#89b4fa>{{ .UserName }}</><#f38ba8>@{{ .HostName }}</> ", 
           "type": "session"
         },
         {
@@ -55,7 +55,7 @@
             "{{ if gt .Ahead 0 }}#f5c2e7{{ end }}", // Pink
             "{{ if gt .Behind 0 }}#89dceb{{ end }}" // Sky
           ],
-          "foreground": "#193549",  // Custom dark color
+          "foreground": "#193549", 
           "powerline_symbol": "\ue0b0",
           "properties": {
             "fetch_stash_count": true,
@@ -94,7 +94,7 @@
     },
     {
       "alignment": "right",
-      "newline": false,  // Ensure no newline for prompt alignment
+      "newline": false,  
       "segments": [
         {
           "foreground": "#ffffff",
@@ -106,7 +106,7 @@
           "type": "executiontime"
         },
         {
-          "background": "#f36943",  // Custom orange color
+          "background": "#f36943", 
           "background_templates": [
             "{{if eq \"Charging\" .State.String}}#40c4ff{{end}}",
             "{{if eq \"Discharging\" .State.String}}#ff5722{{end}}",
